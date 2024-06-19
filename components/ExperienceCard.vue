@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps, computed } from 'vue';
+import { defineProps, computed, ref } from 'vue';
 
 const props = defineProps<{
   title: string;
@@ -9,24 +9,102 @@ const props = defineProps<{
   description: string;
 }>();
 
+const isFlipped = ref(false);
+
 const formattedDescription = computed(() => {
   return props.description.replace(/\n/g, '<br>');
 });
+
+function flipCard() {
+
+  isFlipped.value = !isFlipped.value;
+}
 </script>
 
 <template>
-  <UCard class="flex-1">
-    <div>
-      <div class="text-center pb-7">
-        <h1 class="font-bold text-xl">{{ title }} ({{ contract }})</h1>
-        <h2>{{ entreprise }}</h2>
-        <h2>{{ date }}</h2>
+  <div data-aos="zoom-in-up" data-aos-delay="50">
+    <div class="card-container">
+      <div class="card" :class="{ 'card-flipped': isFlipped }" @click="flipCard">
+        <div class="card-front glass-card">
+          <h3 class="text-xl font-bold">{{ title }}</h3>
+          <h4 class="text-lg">{{ entreprise }}</h4>
+          <p class="date">{{ date }}</p>
+          <p class="contract">{{ contract }}</p>
+        </div>
+        <div class="card-back glass-card">
+          <h4 class="text-lg font-bold">{{ title }}</h4>
+          <p v-html="formattedDescription" class="description"></p>
+        </div>
       </div>
-      <p v-html="formattedDescription"></p>
     </div>
-  </UCard>
+  </div>
 </template>
 
 <style scoped>
-/* Styles supplémentaires si nécessaire */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform-style: preserve-3d;
+}
+
+.card-container {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  margin: 20px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(0deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-flipped .card-front {
+  transform: rotateY(180deg);
+}
+
+.card-flipped .card-back {
+  transform: rotateY(360deg);
+}
+
+.date,
+.contract {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.description {
+  margin-top: 1rem;
+  text-align: center;
+}
 </style>

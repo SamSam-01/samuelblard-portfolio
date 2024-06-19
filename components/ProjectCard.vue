@@ -5,7 +5,7 @@
       <h3>{{ project.title }}</h3>
       <p>{{ truncatedDescription }}</p>
     </div>
-    <UModal v-model="showProjectModal" class="">
+    <UModal size="xl" v-model="showProjectModal" class="">
       <UCard :ui="{ ring: '', divide: 'divide-y divide-gray-100 dark:divide-gray-800' }">
         <template #header>
           <div class="items-end right-0">
