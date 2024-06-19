@@ -8,6 +8,7 @@
       <Projects></Projects>
       <Experiences></Experiences>
     </div>
+    <SpeedInsights/>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Navbar from '~/components/Navbar.vue';
 import Competences from '~/components/Competences.vue';
 import Experiences from '~/components/Experiences.vue';
 import Projects from '~/components/Projects.vue';
+import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 
 export default {
   setup() {
