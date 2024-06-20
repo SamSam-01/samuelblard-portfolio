@@ -32,7 +32,7 @@ function flipCard() {
           <p class="contract">{{ contract }}</p>
         </div>
         <div class="card-back glass-card">
-          <h4 class="text-lg font-bold">{{ title }}</h4>
+          <h4 class="text-lg font-bold top-0">{{ title }}</h4>
           <p v-html="formattedDescription" class="description"></p>
         </div>
       </div>
@@ -105,6 +105,6 @@ function flipCard() {
 
 .description {
   margin-top: 1rem;
-  text-align: center;
+  text-align: left;
 }
 </style>

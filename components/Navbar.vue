@@ -1,6 +1,6 @@
 <template>
   <nav
-      :class="['z-9999 flex items-center justify-between w-full h-16 px-4 bg-white dark:bg-gray-800 text-gray-800 dark:text-white sticky top-0 transition-all duration-150']"
+      :class="['navbar flex items-center justify-between w-full h-16 px-4 bg-white dark:bg-gray-800 text-gray-800 dark:text-white sticky top-0 transition-all duration-150']"
   >
     <div class="text-lg font-bold">
       Samuel BLARD
@@ -31,23 +31,23 @@
       <div v-if="isMenuOpen" class="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-md shadow-lg z-50">
         <ul>
           <li class="border-b border-gray-200 dark:border-gray-600">
-            <button @click="toggleTheme" class="block px-4 py-2 text-sm w-full text-left">
-              {{ $colorMode.preference === 'dark' ? 'Light Mode' : 'Dark Mode' }}
-            </button>
-          </li>
-          <li class="border-b border-gray-200 dark:border-gray-600">
-            <a href="#section1" class="block px-4 py-2 text-sm">
-              Section 1
+            <a href="#whoami" class="block px-4 py-2 text-sm">
+              Qui suis-je ?
             </a>
           </li>
           <li class="border-b border-gray-200 dark:border-gray-600">
-            <a href="#section2" class="block px-4 py-2 text-sm">
-              Section 2
+            <a href="#competences" class="block px-4 py-2 text-sm">
+              Mes Compétences
+            </a>
+          </li>
+          <li class="border-b border-gray-200 dark:border-gray-600">
+            <a href="#projects" class="block px-4 py-2 text-sm">
+              Mes Projets
             </a>
           </li>
           <li>
-            <a href="#section3" class="block px-4 py-2 text-sm">
-              Section 3
+            <a href="#experiences" class="block px-4 py-2 text-sm">
+              Mes Experiences
             </a>
           </li>
         </ul>
@@ -66,10 +66,7 @@ export default {
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
-    },
-    toggleTheme() {
-      this.$colorMode.preference = this.$colorMode.preference === 'dark' ? 'light' : 'dark';
-    },
+    }
   },
   watch: {
     isMenuOpen(newVal) {
@@ -88,10 +85,7 @@ export default {
       if (!this.$el.contains(event.target)) {
         this.isMenuOpen = false;
       }
-    },
-    toggleTheme() {
-      this.$colorMode.preference = this.$colorMode.preference === 'dark' ? 'light' : 'dark';
-    },
+    }
   },
   beforeDestroy() {
     document.removeEventListener('click', this.closeMenu);
@@ -100,5 +94,7 @@ export default {
 </script>
 
 <style scoped>
-
+.navbar {
+  z-index: 999;
+}
 </style>

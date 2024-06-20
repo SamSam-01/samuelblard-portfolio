@@ -1,14 +1,14 @@
 <template>
   <div @mousemove="handleMouseMove" class="main-container">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <SpeedInsights />
     <Navbar></Navbar>
     <div>
-      <Description></Description>
-      <Competences></Competences>
-      <Projects></Projects>
-      <Experiences></Experiences>
+      <Description id="whoami"></Description>
+      <Competences id="competences"></Competences>
+      <Projects id="projects"></Projects>
+      <Experiences id="experiences"></Experiences>
     </div>
-    <SpeedInsights/>
   </div>
 </template>
 
@@ -21,13 +21,14 @@ import Navbar from '~/components/Navbar.vue';
 import Competences from '~/components/Competences.vue';
 import Experiences from '~/components/Experiences.vue';
 import Projects from '~/components/Projects.vue';
-import { SpeedInsights } from "@vercel/speed-insights/nuxt"
+import { SpeedInsights } from "@vercel/speed-insights/nuxt";
 
 
 export default {
   setup() {
     useHead({
       title: 'Samuel BLARD',
+      lang: 'fr',
       meta: [
         { name: 'description', content: 'Samuel BLARD est un développeur Fullstack en Freelance' }
       ]
@@ -70,12 +71,9 @@ export default {
 
 <style scoped>
 .main-container {
-  min-height: 100vh; /* Permettre le défilement si le contenu dépasse la hauteur de la fenêtre */
+  min-height: 100vh;
   background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(101, 255, 133, 0.66), rgba(14, 120, 0, 0.21) 20%);
   transition: background 0.2s;
-}
-Navbar {
-  z-index: 10000;
 }
 </style>
 
@@ -85,8 +83,12 @@ Navbar {
   --mouse-y: 50%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: #000000; /* couleur de fond par défaut */
+  background: #000000;
   margin: 0;
   padding: 0;
 }
