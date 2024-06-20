@@ -12,7 +12,9 @@
   </div>
 </template>
 
+
 <script>
+
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 import Description from './components/Description.vue';
 import Navbar from '~/components/Navbar.vue';
@@ -21,8 +23,15 @@ import Experiences from '~/components/Experiences.vue';
 import Projects from '~/components/Projects.vue';
 import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 
+
 export default {
   setup() {
+    useHead({
+      title: 'Samuel BLARD',
+      meta: [
+        { name: 'description', content: 'Samuel BLARD est un développeur Fullstack en Freelance' }
+      ]
+    })
     const mainContainer = ref(null);
 
     const handleMouseMove = (event) => {

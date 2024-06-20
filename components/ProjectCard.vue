@@ -14,7 +14,7 @@
         </template>
         <div class="p-7 w-full flex flex-wrap">
           <div class="w-1/2 p-2">
-            <img :src="'_nuxt/' + project.image" :alt="project.title" class="rounded-lg shadow-md mb-4"/>
+            <img :src="project.image" :alt="project.title" class="rounded-lg shadow-md mb-4"/>
             <h1>{{ project.title }}</h1>
           </div>
           <div class="w-1/2 p-2">
