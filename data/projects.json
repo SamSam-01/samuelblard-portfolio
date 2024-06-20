@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Booki",
-      "image": "~/assets/images/Booki.png",
+      "image": "/images/Booki.png",
       "github": "https://github.com/SamSam-01/Booki",
       "website": "samsam-01.github.io/Booki/",
       "technologies": ["devicon-html5-plain", "devicon-css3-plain", "devicon-vuejs-plain-wordmark"],

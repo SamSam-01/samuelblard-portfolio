@@ -1,7 +1,7 @@
 <template>
   <div class="p-card">
     <div @click="openProjectModal" class="cursor-pointer">
-      <img :src="'_nuxt/' + project.image" :alt="project.title" class="rounded-lg shadow-md mb-4"/>
+      <img :src="project.image" :alt="project.title" class="rounded-lg shadow-md mb-4"/>
       <h3>{{ project.title }}</h3>
       <p>{{ truncatedDescription }}</p>
     </div>
