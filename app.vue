@@ -28,7 +28,9 @@ export default {
   setup() {
     useHead({
       title: 'Samuel BLARD',
-      lang: 'fr',
+      htmlAttrs: {
+        lang: 'fr'
+      },
       meta: [
         { name: 'description', content: 'Samuel BLARD est un développeur Fullstack en Freelance' }
       ]
