@@ -11,7 +11,7 @@
     </div>
 
     <div class="relative">
-      <button name="links" @click="toggleMenu" class="focus:outline-none">
+      <button title="Menu" @click="toggleMenu" class="focus:outline-none">
         <svg
             class="w-6 h-6"
             fill="none"
