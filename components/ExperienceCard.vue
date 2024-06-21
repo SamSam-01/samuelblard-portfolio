@@ -70,6 +70,11 @@ function flipCard() {
 .card:hover {
   transform: scale(1.1);
 }
+@media (max-width: 480px) {
+  .card:hover {
+    transform: scale(1);
+  }
+}
 
 .card-front,
 .card-back {

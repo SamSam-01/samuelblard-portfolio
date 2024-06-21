@@ -66,11 +66,6 @@ const truncatedDescription = computed(() => {
 </script>
 
 <style scoped>
-.modal {
-  min-width: 50vw !important;
-  min-height: 50vh !important;
-}
-
 .p-card {
   width: 300px;
   margin-right: 2rem;
@@ -80,6 +75,11 @@ const truncatedDescription = computed(() => {
 
 .p-card:hover {
   transform: scale(1.1);
+}
+@media (max-width: 480px) {
+  .p-card:hover {
+    transform: scale(1);
+  }
 }
 
 .p-card img {
