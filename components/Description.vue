@@ -1,15 +1,22 @@
 <template>
   <UContainer class="py-12">
     <SectionTitle title="Qui suis-je?" />
-    <UCard class="p-6 bg-white dark:bg-gray-800 shadow-md rounded-md mt-10">
-      <div class="text-left mb-6">
-        <h2 class="text-2xl font-semibold">Samuel BLARD</h2>
-        <h3 class="text-xl font-medium text-gray-700 dark:text-gray-300">Développeur FullStack</h3>
+    <div class="flex flex-col md:flex-row items-center md:items-stretch pt-10 pb-20">
+      <div class="md:w-1/3 p-4 about-image flex items-center justify-center" data-aos="fade-right" data-aos-duration="2000">
+        <img src="/images/Me.jpeg" alt="Photo de profil" />
       </div>
-      <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-      </p>
-    </UCard>
+      <div class="md:w-2/3 p-4 flex flex-col justify-center" data-aos="fade-left" data-aos-duration="2000">
+        <div class="text-left mb-6">
+          <h2 class="text-7xl font-bold font-sans uppercase">Samuel BLARD</h2>
+          <h3 class="text-3xl font-medium text-gray-300">Développeur Fullstack - React | Vue | Node</h3>
+        </div>
+        <p class="text-white text-lg leading-relaxed">
+          Passionné par les nouvelles technologies, j'ai commencé à explorer la programmation à 11 ans avec une carte Arduino.
+          Autodidacte et à l'affût des nouveautés, j'ai développé des projets extra scolaires et appris à programmer en Python.
+          Constamment à la recherche de challenge, je n'ai pas peur de sortir de ma zone de confort pour m'améliorer et pour travailler sur mes défauts.
+        </p>
+      </div>
+    </div>
   </UContainer>
 </template>
 
@@ -21,5 +28,17 @@ export default {
 </script>
 
 <style scoped>
-/* Styles supplémentaires si nécessaire */
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 20rem;
+  height: auto;
+  border-radius: 69% 31% 27% 73% / 45% 49% 51% 55%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 </style>

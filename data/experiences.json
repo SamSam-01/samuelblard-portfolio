@@ -1,11 +1,11 @@
 {
-  "projects": [
+  "experiences": [
     {
-      "title": "Booki",
-      "image": "/images/Booki.png",
-      "github": "https://github.com/SamSam-01/Booki",
-      "website": "https://samsam-01.github.io/Booki/",
-      "technologies": ["devicon-html5-plain", "devicon-css3-plain"],
+      "entreprise": "ISAE-SUPAERO",
+      "title": "Développeur Fullstack",
+      "logo": "/images/Booki.png",
+      "contract": "https://github.com/SamSam-01/Booki",
+      "date": "https://samsam-01.github.io/Booki/",
       "description": "L'entreprise souhaite créer un site Internet permettant aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix. Mon rôle dans ce projet est d'intégrer l'interface utilisateur du site en utilisant HTML et CSS."
     },
     {

@@ -12,6 +12,7 @@
   "devDependencies": {
     "@formkit/auto-animate": "^0.8.2",
     "@nuxt/devtools": "latest",
+    "@nuxt/icon": "^1.0.0-rc.1",
     "@nuxt/ui": "^2.13.0",
     "nuxt": "^3.10.1",
     "nuxt-aos": "^1.2.4"

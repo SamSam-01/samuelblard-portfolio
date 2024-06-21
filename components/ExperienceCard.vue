@@ -42,7 +42,7 @@ function flipCard() {
 
 <style scoped>
 .glass-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.32);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;

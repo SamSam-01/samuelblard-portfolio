@@ -5,25 +5,31 @@
       <h3>{{ project.title }}</h3>
       <p>{{ truncatedDescription }}</p>
     </div>
-    <UModal size="xl" v-model="showProjectModal" class="">
+    <UModal v-model="showProjectModal">
       <UCard :ui="{ ring: '', divide: 'divide-y divide-gray-100 dark:divide-gray-800' }">
         <template #header>
           <div class="items-end right-0">
             <UButton color="gray" variant="ghost" icon="i-heroicons-x-mark-20-solid" class="-my-1" @click="showProjectModal = false" />
           </div>
         </template>
-        <div class="p-7 w-full flex flex-wrap">
-          <div class="w-1/2 p-2">
+        <div class="p-7 w-full">
+          <div class="items-center justify-center">
             <img :src="project.image" :alt="project.title" class="rounded-lg shadow-md mb-4"/>
-            <h1>{{ project.title }}</h1>
+            <h1 class="text-center">{{ project.title }}</h1>
           </div>
-          <div class="w-1/2 p-2">
+          <div class="text-left">
             <p>{{ project.description }}</p>
-            <div class="flex flex-wrap items-center justify-center space-x-2">
-              <i v-for="icon in project.technologies" :key="icon" :class="['text-4xl', icon]"></i>
-            </div>
+          </div>
+          <div class="pt-2 flex flex-wrap items-center justify-center space-x-2">
+            <i v-for="icon in project.technologies" :key="icon" :class="['text-4xl', icon]"></i>
           </div>
         </div>
+        <template #footer>
+          <div class="flex flex-wrap items-center justify-center space-x-2">
+            <a :href="project.github" target="_blank" class="bg-green-500 p-1 rounded-3xl"><i class="devicon-github-original p-1"></i>Voir le code</a>
+            <a :href="project.website" target="_blank" class="bg-green-500 p-1 rounded-full" ><Icon name="material-symbols:web-asset" class=""/>Visiter le site</a>
+          </div>
+        </template>
       </UCard>
     </UModal>
   </div>
@@ -31,6 +37,8 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
+import SavedModal from '~/components/ProjectModal.vue'
+
 
 const props = defineProps<{
   project: {
@@ -49,12 +57,8 @@ const openProjectModal = () => {
   showProjectModal.value = true;
 };
 
-const closeProjectModal = () => {
-  showProjectModal.value = false;
-};
-
 const truncatedDescription = computed(() => {
-  const maxLength = 100; // Ajustez cette valeur selon vos besoins
+  const maxLength = 100;
   if (props.project.description.length > maxLength) {
     return props.project.description.substring(0, maxLength) + '...';
   }
@@ -63,6 +67,11 @@ const truncatedDescription = computed(() => {
 </script>
 
 <style scoped>
+.modal {
+  min-width: 50vw !important;
+  min-height: 50vh !important;
+}
+
 .p-card {
   width: 300px;
   margin-right: 2rem;
