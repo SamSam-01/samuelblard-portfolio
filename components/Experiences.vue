@@ -18,13 +18,13 @@ const description6 = ref(`- Participation aux 24 heures de l'innovations (3ème 
 <template>
   <UContainer>
     <SectionTitle title="Expériences"/>
-    <div class="grid grid-cols-3 gap-4 align-middle">
+    <div class="md:grid md:grid-cols-3 md:gap-4 md:align-middle">
       <ExperienceCard title="Développeur FullStack" contract="Alternance" date="Juillet 2023 - Juin 2024" entreprise="ISAE-SUPAERO" :description="description1" />
       <ExperienceCard title="Conseiller de Vente LG" contract="CDD" date="Mai 2023 - Juillet 2023" entreprise="TechSell" :description="description2" />
       <ExperienceCard title="Développeur FullStack" contract="Stage" date="Juillet 2023 - Juin 2024" entreprise="ISAE-SUPAERO" :description="description3" />
     </div>
     <SectionTitle title="Formations"/>
-    <div class="grid grid-cols-3 gap-4 align-middle pb-7">
+    <div class="md:grid md:grid-cols-3 md:gap-4 md:align-middle pb-7">
       <ExperienceCard title="Développeur Intégrateur WEB" contract="Obtenu" date="Juillet 2023 - Juin 2024" entreprise="OpenClassrooms" :description="description4" />
       <ExperienceCard title="Développeur FullStack" contract="Interrompu" date="Septembre 2021 - Juillet 2023" entreprise="EPITECH" :description="description5" />
       <ExperienceCard title="Baccalauréat Général - Mathématiques, NSI, SI" contract="Mention Bien" date="2021" entreprise="CNED" :description="description6" />
