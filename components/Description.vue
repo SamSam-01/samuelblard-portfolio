@@ -2,13 +2,13 @@
   <UContainer class="py-12">
     <SectionTitle title="Qui suis-je?" />
     <div class="flex flex-col md:flex-row items-center md:items-stretch pt-10 pb-20">
-      <div class="md:w-1/3 p-4 about-image flex items-center justify-center" data-aos="fade-right" data-aos-duration="2000">
-        <img src="/images/Me.jpeg" alt="Photo de profil" />
+      <div class="hidden md:flex md:w-1/3 md:p-4 about-image  items-center justify-center" data-aos="fade-right" data-aos-duration="2000">
+        <img class="hidden md:block" src="/images/Me.jpeg" alt="Photo de profil" />
       </div>
-      <div class="md:w-2/3 p-4 flex flex-col justify-center" data-aos="fade-left" data-aos-duration="2000">
+      <div class="md:w-2/3 md:p-4 flex flex-col justify-center" data-aos="fade-left" data-aos-duration="2000">
         <div class="text-left mb-6">
-          <h2 class="text-7xl font-bold font-sans uppercase">Samuel BLARD</h2>
-          <h3 class="text-3xl font-medium text-gray-300">Développeur Fullstack - React | Vue | Node</h3>
+          <h2 class="text-4xl md:text-7xl font-bold font-sans uppercase">Samuel BLARD</h2>
+          <h3 class="text-2xl md:text-3xl font-medium text-gray-300">Développeur Fullstack - React | Vue | Node</h3>
         </div>
         <p class="text-white text-lg leading-relaxed">
           Passionné par les nouvelles technologies, j'ai commencé à explorer la programmation à 11 ans avec une carte Arduino.

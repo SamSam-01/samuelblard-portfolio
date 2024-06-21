@@ -1,8 +1,6 @@
 {
-  "experiences": {
-    "name": "Samuel BLARD",
-    "title": "Développeur Fullstack - React | Vue | Node",
-    "image": "/images/Me.jpeg",
-    "description": "Passionné par les nouvelles technologies, j'ai commencé à explorer la programmation à 11 ans avec une carte Arduino. Autodidacte et à l'affût des nouveautés, j'ai développé des projets extra scolaires et appris à programmer en Python. Constamment à la recherche de challenge, je n'ai pas peur de sortir de ma zone de confort pour m'améliorer et pour travailler sur mes défauts."
-  }
+  "name": "Samuel BLARD",
+  "title": "Développeur Fullstack - React | Vue | Node",
+  "image": "/images/Me.jpeg",
+  "description": "Passionné par les nouvelles technologies, j'ai commencé à explorer la programmation à 11 ans avec une carte Arduino. Autodidacte et à l'affût des nouveautés, j'ai développé des projets extra scolaires et appris à programmer en Python. Constamment à la recherche de challenge, je n'ai pas peur de sortir de ma zone de confort pour m'améliorer et pour travailler sur mes défauts."
 }

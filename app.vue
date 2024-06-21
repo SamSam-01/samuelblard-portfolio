@@ -14,7 +14,6 @@
 
 
 <script>
-
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 import Description from './components/Description.vue';
 import Navbar from '~/components/Navbar.vue';
@@ -23,21 +22,16 @@ import Experiences from '~/components/Experiences.vue';
 import Projects from '~/components/Projects.vue';
 import { SpeedInsights } from "@vercel/speed-insights/nuxt";
 
-
 export default {
   setup() {
-    useHead({
-      title: 'Samuel BLARD',
-      htmlAttrs: {
-        lang: 'fr'
-      },
-      meta: [
-        { name: 'description', content: 'Samuel BLARD est un développeur Fullstack en Freelance' }
-      ]
-    })
     const mainContainer = ref(null);
 
     const handleMouseMove = (event) => {
+      // Vérification si l'appareil est mobile (largeur <= 768px)
+      if (window.matchMedia('(max-width: 768px)').matches) {
+        return; // Ne rien faire si c'est un appareil mobile
+      }
+
       const { clientX, clientY } = event;
       const { innerWidth, scrollY } = window;
 
@@ -71,11 +65,18 @@ export default {
 };
 </script>
 
+
 <style scoped>
 .main-container {
   min-height: 100vh;
   background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(101, 255, 133, 0.66), rgba(14, 120, 0, 0.21) 20%);
   transition: background 0.2s;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    background: rgba(14, 120, 0, 0.21); /* Retire le radial-gradient pour les appareils mobiles */
+  }
 }
 </style>
 
