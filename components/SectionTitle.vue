@@ -7,7 +7,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <h1 class="text-5xl font-bold mb-6 text-left uppercase text-white-transparen pt-10" data-aos="fade-right">
+  <h1 class="text-5xl font-bold mb-6 text-center md:text-left uppercase text-white pt-5 md:pt-10" data-aos="fade-right">
     {{ title }}
   </h1>
 </template>
