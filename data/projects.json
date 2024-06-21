@@ -7,6 +7,14 @@
       "website": "https://samsam-01.github.io/Booki/",
       "technologies": ["devicon-html5-plain", "devicon-css3-plain"],
       "description": "L'entreprise souhaite créer un site Internet permettant aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix. Mon rôle dans ce projet est d'intégrer l'interface utilisateur du site en utilisant HTML et CSS."
+    },
+    {
+      "title": "Project 2",
+      "image": "/images/Booki.png",
+      "github": "https://github.com/username/project2",
+      "website": "https://project2.com",
+      "technologies": ["devicon-react-original", "devicon-nodejs-plain-wordmark", "devicon-express-original"],
+      "description": "Description of Project 2."
     }
   ]
 }

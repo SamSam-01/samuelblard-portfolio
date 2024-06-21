@@ -1,5 +1,5 @@
 <template>
-  <div class="p-card">
+  <div class="p-card mx-auto">
     <div @click="openProjectModal" class="cursor-pointer">
       <img :src="project.image" :alt="project.title" class="rounded-lg shadow-md mb-4"/>
       <h3>{{ project.title }}</h3>
@@ -37,7 +37,6 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import SavedModal from '~/components/ProjectModal.vue'
 
 
 const props = defineProps<{

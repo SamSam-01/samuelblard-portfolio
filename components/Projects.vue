@@ -1,7 +1,7 @@
 <template>
   <UContainer>
     <SectionTitle title="Mes Projets" />
-    <div class="project-wrapper">
+    <div class="flex flex-col md:flex-row justify-center md:items-start md:mt-3 md:gap-2">
       <div v-for="project in projects" :key="project.id" class="project-cards" data-aos="fade-up">
         <ProjectCard :project="project" />
       </div>
@@ -19,14 +19,6 @@ const projects = project_list.projects;
 </script>
 
 <style scoped>
-.project-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 3rem;
-  gap: 2rem;
-}
-
 .project-cards {
   -webkit-overflow-scrolling: touch;
   margin-top: 3rem;
