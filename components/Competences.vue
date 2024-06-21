@@ -11,7 +11,7 @@ const competencesList = competences.competences;
 <template>
   <UContainer>
     <SectionTitle title="Mes compétences" />
-    <div class="grid grid-cols-8 gap-4 align-middle items-center">
+    <div class="grid grid-cols-3 md:grid-cols-8 gap-4 align-middle items-center pb-10 md:p-0">
       <div v-for="competence in competencesList" :key="competence.id" class="flex flex-col items-center justify-center">
         <CompetencesIcons :competence="competence"/>
       </div>
