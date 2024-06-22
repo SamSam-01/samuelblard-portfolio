@@ -1,7 +1,7 @@
 <template>
   <div class="p-card mx-auto">
     <div @click="openProjectModal" class="cursor-pointer">
-      <img :src="project.image" :alt="project.title" class="rounded-lg shadow-md mb-4"/>
+      <img :src="project.image" :alt="project.title" class="max-h-[172px] max-w-[300px] object-cover object-top rounded-lg shadow-md mb-4"/>
       <h3>{{ project.title }}</h3>
       <p>{{ truncatedDescription }}</p>
     </div>
@@ -26,8 +26,8 @@
         </div>
         <template #footer>
           <div class="flex flex-wrap items-center justify-center space-x-2">
-            <a :href="project.github" target="_blank" class="bg-green-500 p-1 rounded-3xl"><i class="devicon-github-original p-1"></i>Voir le code</a>
-            <a :href="project.website" target="_blank" class="bg-green-500 p-1 rounded-full" ><Icon name="material-symbols:web-asset" class=""/>Visiter le site</a>
+            <a v-if="project.github != null" :href="project.github" target="_blank" class="bg-green-500 p-1 rounded-3xl"><i class="devicon-github-original p-1"></i>Voir le code</a>
+            <a v-if="project.website != null" :href="project.website" target="_blank" class="bg-green-500 p-1 rounded-full" >Visiter le site →</a>
           </div>
         </template>
       </UCard>
