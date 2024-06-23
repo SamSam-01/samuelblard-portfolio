@@ -24,7 +24,7 @@ const projects = project_list.projects;
 <style scoped>
 .project-cards {
   width: 100%;
-  max-width: 300px; /* Ajustez selon la largeur de votre carte */
+  max-width: 300px;
   margin-top: 3rem;
 }
 </style>
