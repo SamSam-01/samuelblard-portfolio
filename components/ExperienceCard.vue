@@ -31,7 +31,8 @@ function flipCard() {
       <div class="card" :class="{ 'card-flipped': isFlipped }" @click="flipCard">
         <div class="card-front glass-card">
           <h3 class="text-center text-xl font-bold">{{ experience.title }}</h3>
-          <h4 class="text-lg">{{ experience.entreprise }}</h4>
+          <img v-if="experience.logo" :src="experience.logo" :alt="experience.entreprise" class="max-w-20"/>
+          <h4 v-else class="text-lg">{{ experience.entreprise }}</h4>
           <p class="date">{{ experience.date }}</p>
           <p class="contract">{{ experience.contract }}</p>
         </div>
