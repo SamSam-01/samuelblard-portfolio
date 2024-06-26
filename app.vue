@@ -9,6 +9,7 @@
       <Projects id="projects"></Projects>
       <Experiences id="experiences"></Experiences>
     </div>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import Description from './components/Description.vue';
 import Navbar from '~/components/Navbar.vue';
 import Competences from '~/components/Competences.vue';
 import Experiences from '~/components/Experiences.vue';
+import Footer from '~/components/Footer.vue';
 import Projects from '~/components/Projects.vue';
 import { SpeedInsights } from "@vercel/speed-insights/nuxt";
 
