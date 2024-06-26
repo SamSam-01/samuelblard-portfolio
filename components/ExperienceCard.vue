@@ -62,8 +62,8 @@ function flipCard() {
 }
 
 .card {
-  width: 350px;
-  height: 450px;
+  width: 300px;
+  height: 400px;
   position: relative;
   transform-style: preserve-3d;
   cursor: pointer;
