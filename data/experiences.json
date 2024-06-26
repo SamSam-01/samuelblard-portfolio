@@ -3,18 +3,26 @@
     {
       "entreprise": "ISAE-SUPAERO",
       "title": "Développeur Fullstack",
-      "logo": "/images/Booki.png",
-      "contract": "https://github.com/SamSam-01/Booki",
-      "date": "https://samsam-01.github.io/Booki/",
-      "description": "L'entreprise souhaite créer un site Internet permettant aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix. Mon rôle dans ce projet est d'intégrer l'interface utilisateur du site en utilisant HTML et CSS."
+      "logo": null,
+      "contract": "Stage",
+      "date": "Juillet 2022 - Décembre 2022",
+      "description": "- Développer une page de profil pour les Étudiants sur la plateforme d'apprentissage (VueJS)\n- Développer des recommandations de cours à suivre (JS / ElasticSearch)\n- Développer une page de suivi des statistiques des cours pour les auteurs (Drupal)\n- Déployer sur le serveur de pré-production (Kubernetes/Docker/Jenkins)"
     },
     {
-      "title": "Project 2",
-      "image": "/images/Booki.png",
-      "github": "https://github.com/username/project2",
-      "website": "https://project2.com",
-      "technologies": ["devicon-react-original", "devicon-nodejs-plain-wordmark", "devicon-express-original"],
-      "description": "Description of Project 2."
+      "entreprise": "TECHSELL",
+      "title": "Conseiller de vente LG",
+      "logo": null,
+      "contract": "CDD",
+      "date": "Mai 2023 - Juillet 2023",
+      "description": "- Aller au contact des clients\n- Se former aux nouvelles technologies de LG et ses concurrents\n- Connaître les produits LG et concurrents"
+    },
+    {
+      "entreprise": "ISAE-SUPAERO",
+      "title": "Développeur Fullstack",
+      "logo": null,
+      "contract": "Alternance",
+      "date": "Juillet 2023 - Juin 2024",
+      "description": "- Développement de nouvelles fonctionnalités\n- Résoudre des bugs (VueJS, PHP)\n- Optimiser les performances serveur (Django)\n- Organisation de sprints (SCRUM Master)"
     }
   ]
 }

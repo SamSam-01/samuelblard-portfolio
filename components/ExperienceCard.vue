@@ -2,17 +2,21 @@
 import { defineProps, computed, ref } from 'vue';
 
 const props = defineProps<{
-  title: string;
-  date: string;
-  contract: string;
-  entreprise: string;
-  description: string;
+  experience: {
+    entreprise: string;
+    title: string;
+    logo: string;
+    contract: string;
+    date: string;
+    description: string;
+  };
 }>();
 
 const isFlipped = ref(false);
+const description = props.experience.description;
 
 const formattedDescription = computed(() => {
-  return props.description.replace(/\n/g, '<br>');
+  return description.replace(/\n/g, '<br>');
 });
 
 function flipCard() {
@@ -26,14 +30,14 @@ function flipCard() {
     <div class="card-container">
       <div class="card" :class="{ 'card-flipped': isFlipped }" @click="flipCard">
         <div class="card-front glass-card">
-          <h3 class="text-xl font-bold">{{ title }}</h3>
-          <h4 class="text-lg">{{ entreprise }}</h4>
-          <p class="date">{{ date }}</p>
-          <p class="contract">{{ contract }}</p>
+          <h3 class="text-center text-xl font-bold">{{ experience.title }}</h3>
+          <h4 class="text-lg">{{ experience.entreprise }}</h4>
+          <p class="date">{{ experience.date }}</p>
+          <p class="contract">{{ experience.contract }}</p>
         </div>
         <div class="card-back glass-card">
-          <h4 class="text-lg font-bold top-0">{{ title }}</h4>
-          <p v-html="formattedDescription" class="description"></p>
+          <h4 class="text-center text-lg font-bold top-0">{{ experience.title }}</h4>
+          <p v-html="formattedDescription" class="description  text-left"></p>
         </div>
       </div>
     </div>
@@ -58,8 +62,8 @@ function flipCard() {
 }
 
 .card {
-  width: 300px;
-  height: 400px;
+  width: 350px;
+  height: 450px;
   position: relative;
   transform-style: preserve-3d;
   cursor: pointer;
