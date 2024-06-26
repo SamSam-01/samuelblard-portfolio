@@ -2,7 +2,7 @@
   <div class="p-card mx-auto">
     <div @click="openProjectModal" class="cursor-pointer">
       <img :src="project.image" :alt="project.title" class="max-h-[172px] max-w-[300px] object-cover object-top rounded-lg shadow-md mb-4"/>
-      <h3>{{ project.title }}</h3>
+      <h3 class="font-bold">{{ project.title }}</h3>
       <p>{{ truncatedDescription }}</p>
     </div>
     <UModal v-model="showProjectModal">
@@ -14,13 +14,13 @@
         </template>
         <div class="p-7 w-full">
           <div class="items-center justify-center">
-            <img :src="project.image" :alt="project.title" class="rounded-lg shadow-md mb-4"/>
-            <h1 class="text-center">{{ project.title }}</h1>
+            <img :src="project.image" :alt="project.title" class="mx-auto h-[172px] w-[300px] object-cover object-top rounded-lg shadow-md mb-4"/>
+            <h1 class="text-center font-bold">{{ project.title }}</h1>
           </div>
           <div class="text-left">
             <p>{{ project.description }}</p>
           </div>
-          <div class="pt-2 flex flex-wrap items-center justify-center space-x-2">
+          <div class="pt-5 flex flex-wrap items-center justify-center space-x-2">
             <i v-for="icon in project.technologies" :key="icon" :class="['text-4xl', icon]"></i>
           </div>
         </div>
