@@ -3,7 +3,7 @@
     {
       "entreprise": "OpenClassrooms",
       "title": "Développeur Intégrateur Web",
-      "logo": "/images/logos/Openclassrooms.png",
+      "logo": null,
       "contract": "Obtenu",
       "date": "Juillet 2023 - Juin 2024",
       "description": "Quelques projets effectués:\n- Page web dynamique (JS)\n- Optimisation d’un site avec Lighthouse\n- Application de location immobilière (REACT)\n- Back-end d’un site de notation de livre (Node - Express)"
