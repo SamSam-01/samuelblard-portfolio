@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Booki",
-      "image": "/images/projects/Booki.png",
+      "image": "/images/projects/Booki.webp",
       "github": "https://github.com/SamSam-01/Booki",
       "website": "https://samsam-01.github.io/Booki/",
       "technologies": ["devicon-html5-plain", "devicon-css3-plain"],
@@ -10,7 +10,7 @@
     },
     {
       "title": "Portfolio Sophie Bluel",
-      "image": "/images/projects/SophieBluel.png",
+      "image": "/images/projects/SophieBluel.webp",
       "github": "https://github.com/SamSam-01/Portfolio-architect-sophie-bluel",
       "website": null,
       "technologies": ["devicon-html5-plain", "devicon-javascript-plain"],
@@ -18,7 +18,7 @@
     },
     {
       "title": "Kasa",
-      "image": "/images/projects/Kasa.png",
+      "image": "/images/projects/Kasa.webp",
       "github": "https://github.com/SamSam-01/kasa",
       "website": "https://samsam-01.github.io/kasa/",
       "technologies": ["devicon-react-original", "devicon-typescript-plain"],
@@ -26,7 +26,7 @@
     },
     {
       "title": "Mon vieux grimoire",
-      "image": "/images/projects/Monvieuxgrimoire.png",
+      "image": "/images/projects/Monvieuxgrimoire.webp",
       "github": "https://github.com/SamSam-01/mon-vieux-grimoire-backend",
       "website": null,
       "technologies": ["devicon-nodejs-plain-wordmark", "devicon-express-original"],
@@ -34,7 +34,7 @@
     },
     {
       "title": "Nina Carducci",
-      "image": "/images/projects/Ninacarduccci.png",
+      "image": "/images/projects/Ninacarduccci.webp",
       "github": "https://github.com/SamSam-01/nina-carducci",
       "website": "https://samsam-01.github.io/nina-carducci/",
       "technologies": ["devicon-html5-plain", "devicon-css3-plain", "devicon-javascript-plain"],
