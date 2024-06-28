@@ -1,7 +1,7 @@
 <template>
   <div class="p-card mx-auto">
     <div @click="openProjectModal" class="cursor-pointer">
-      <img :src="project.image" :alt="project.title" class="max-h-[172px] max-w-[300px] object-cover object-top rounded-lg shadow-md mb-4"/>
+      <NuxtImg :src="project.image" :alt="project.title" class="max-h-[172px] max-w-[300px] object-cover object-top rounded-lg shadow-md mb-4" sizes="100vw sm:50vw md:400px"/>
       <h3 class="font-bold">{{ project.title }}</h3>
       <p>{{ truncatedDescription }}</p>
     </div>
@@ -14,7 +14,7 @@
         </template>
         <div class="p-7 w-full">
           <div class="items-center justify-center">
-            <img :src="project.image" :alt="project.title" class="mx-auto h-[172px] w-[300px] object-cover object-top rounded-lg shadow-md mb-4"/>
+            <NuxtImg :src="project.image" :alt="project.title" class="mx-auto h-[172px] w-[300px] object-cover object-top rounded-lg shadow-md mb-4" sizes="100vw sm:50vw md:400px"/>
             <h1 class="text-center font-bold">{{ project.title }}</h1>
           </div>
           <div class="text-left">

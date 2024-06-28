@@ -31,7 +31,7 @@ function flipCard() {
       <div class="card" :class="{ 'card-flipped': isFlipped }" @click="flipCard">
         <div class="card-front glass-card">
           <h3 class="text-center text-xl font-bold">{{ experience.title }}</h3>
-          <img v-if="experience.logo" :src="experience.logo" :alt="experience.entreprise" class="max-w-20"/>
+          <NuxtImg v-if="experience.logo" :src="experience.logo" :alt="experience.entreprise" class="max-w-20" sizes="100vw sm:50vw md:400px"/>
           <h4 v-else class="text-lg">{{ experience.entreprise }}</h4>
           <p class="date">{{ experience.date }}</p>
           <p class="contract">{{ experience.contract }}</p>

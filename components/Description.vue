@@ -3,7 +3,7 @@
     <SectionTitle title="Qui suis-je?" />
     <div class="flex flex-col md:flex-row items-center md:items-stretch pt-10 pb-20">
       <div class="hidden md:flex md:w-1/3 md:p-4 about-image  items-center justify-center" data-aos="fade-right" data-aos-duration="2000">
-        <img class="hidden md:block" :src="about.image" alt="Photo de profil" />
+        <NuxtImg class="hidden md:block" :src="about.image" alt="Photo de profil" sizes="100vw sm:50vw md:400px" />
       </div>
       <div class="md:w-2/3 md:p-4 flex flex-col justify-center" data-aos="fade-left" data-aos-duration="2000">
         <div class="text-left mb-6">
