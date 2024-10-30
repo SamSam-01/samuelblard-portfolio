@@ -2,8 +2,8 @@
 import SectionTitle from "~/components/SectionTitle.vue";
 import ExperienceCard from "~/components/ExperienceCard.vue";
 import LoadMore from "~/components/LoadMore.vue";
-import experiences from "~/data/experiences.json";
-import formations from "~/data/formations.json";
+import experiences from "~/content/experiences.json";
+import formations from "~/content/formations.json";
 
 const experiences_list = experiences.experiences;
 const formations_list = formations.formations;

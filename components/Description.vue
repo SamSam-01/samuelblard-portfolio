@@ -18,7 +18,7 @@
 
 <script setup>
 import SectionTitle from "~/components/SectionTitle.vue";
-import aboutme from "~/data/aboutme.json";
+import aboutme from "~/content/aboutme.json";
 
 const about = aboutme;
 </script>

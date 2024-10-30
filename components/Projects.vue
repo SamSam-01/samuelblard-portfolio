@@ -16,7 +16,7 @@ import SectionTitle from '~/components/SectionTitle.vue';
 import ProjectCard from '~/components/ProjectCard.vue';
 import LoadMore from '~/components/LoadMore.vue';
 
-import project_list from '~/data/projects.json';
+import project_list from '~/content/projects.json';
 
 const projects = project_list.projects;
 </script>
