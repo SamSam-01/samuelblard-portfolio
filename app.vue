@@ -24,6 +24,7 @@ import Footer from '~/components/Footer.vue';
 import Projects from '~/components/Projects.vue';
 import { SpeedInsights } from "@vercel/speed-insights/nuxt";
 
+
 export default {
   setup() {
     useHead({
@@ -72,6 +73,7 @@ export default {
     Navbar,
     Competences,
     Experiences,
+    SpeedInsights
   },
 };
 </script>
