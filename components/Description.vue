@@ -1,6 +1,6 @@
 <template>
-  <UContainer class="py-12">
-    <SectionTitle title="Qui suis-je?" />
+  <UContainer class="py-52">
+    <!--<SectionTitle title="Qui suis-je?" />-->
     <div class="flex flex-col md:flex-row items-center md:items-stretch pt-10 pb-20">
       <div class="hidden md:flex md:w-1/3 md:p-4 about-image  items-center justify-center" data-aos="fade-right" data-aos-duration="2000">
         <NuxtImg class="hidden md:block" :src="about.image" alt="Photo de profil" sizes="100vw sm:50vw md:400px" />
