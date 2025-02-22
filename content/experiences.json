@@ -2,6 +2,14 @@
   "experiences": [
     {
       "entreprise": "ISAE-SUPAERO",
+      "title": "Ingénieur Fullstack Junior",
+      "logo": "/images/logos/ISAE-SUPAERO.webp",
+      "contract": "CDD",
+      "date": "Depuis Juillet 2024",
+      "description": "- Développement de nouvelles fonctionnalités\n- Résoudre des bugs (VueJS, PHP)\n- Optimiser les performances serveur (Django)\n- Organisation de sprints (SCRUM Master)"
+    },
+    {
+      "entreprise": "ISAE-SUPAERO",
       "title": "Développeur Fullstack",
       "logo": "/images/logos/ISAE-SUPAERO.webp",
       "contract": "Alternance",

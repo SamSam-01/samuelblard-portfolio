@@ -1,6 +1,22 @@
 {
   "projects": [
     {
+      "title": "Cesium poc",
+      "image": "/images/projects/Cesium.png",
+      "github": "https://github.com/SamSam-01/Cesium-poc",
+      "website": "https://world.samuelblard.com/",
+      "technologies": ["devicon-react-original"],
+      "description": "Test de CesiumJs"
+    },
+    {
+      "title": "Junqo Landing Page",
+      "image": "/images/projects/Junqo.png",
+      "github": null,
+      "website": "https://jlp-dev.vercel.app/",
+      "technologies": ["devicon-html5-plain", "devicon-css3-plain"],
+      "description": "Landing page pour Junqo"
+    },
+    {
       "title": "Booki",
       "image": "/images/projects/Booki.webp",
       "github": "https://github.com/SamSam-01/Booki",
