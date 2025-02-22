@@ -34,6 +34,9 @@ export default {
       },
       meta: [
         { name: 'description', content: 'Samuel BLARD est un développeur Fullstack spécialiser dans le développement VueJS, ReactJS et NodeJS' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/logo.png' }
       ]
     })
     const mainContainer = ref(null);
