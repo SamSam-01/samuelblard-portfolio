@@ -1,0 +1,60 @@
+{
+  "projects": [
+    {
+      "title": "Cesium poc",
+      "image": "/images/projects/Cesium.png",
+      "github": "https://github.com/SamSam-01/Cesium-poc",
+      "website": "https://world.samuelblard.com/",
+      "technologies": ["devicon-react-original"],
+      "description": "CesiumJs test"
+    },
+    {
+      "title": "Junqo Landing Page",
+      "image": "/images/projects/Junqo.png",
+      "github": null,
+      "website": "https://jlp-dev.vercel.app/",
+      "technologies": ["devicon-html5-plain", "devicon-css3-plain"],
+      "description": "Landing page for Junqo"
+    },
+    {
+      "title": "Booki",
+      "image": "/images/projects/Booki.webp",
+      "github": "https://github.com/SamSam-01/Booki",
+      "website": "https://samsam-01.github.io/Booki/",
+      "technologies": ["devicon-html5-plain", "devicon-css3-plain"],
+      "description": "The company wants to create a website allowing users to find accommodations and activities in the city of their choice. My role in this project is to integrate the user interface of the site using HTML and CSS."
+    },
+    {
+      "title": "Sophie Bluel Portfolio",
+      "image": "/images/projects/SophieBluel.webp",
+      "github": "https://github.com/SamSam-01/Portfolio-architect-sophie-bluel",
+      "website": null,
+      "technologies": ["devicon-html5-plain", "devicon-javascript-plain"],
+      "description": "As a front-end developer at ArchiWebos, I was integrated as reinforcement in a team working on the design of an interior architect's portfolio website. My role is to develop key features of the site to improve user experience and enable efficient content management."
+    },
+    {
+      "title": "Kasa",
+      "image": "/images/projects/Kasa.webp",
+      "github": "https://github.com/SamSam-01/kasa",
+      "website": "https://samsam-01.github.io/kasa/",
+      "technologies": ["devicon-react-original", "devicon-typescript-plain"],
+      "description": "As a freelance front-end developer for Kasa, a leader in peer-to-peer apartment rentals in France, my mission is to participate in the complete redesign of the site. This redesign involves the transition from ASP.NET to a modern JavaScript stack, with NodeJS for the back-end and React for the front-end. The project includes setting up a responsive user interface based on Figma mockups."
+    },
+    {
+      "title": "My Old Grimoire",
+      "image": "/images/projects/Monvieuxgrimoire.webp",
+      "github": "https://github.com/SamSam-01/mon-vieux-grimoire-backend",
+      "website": null,
+      "technologies": ["devicon-nodejs-plain-wordmark", "devicon-express-original"],
+      "description": "The project consists of developing the back-end of a website allowing users to rate books. The back-end will be created using Express.js and connected to a MongoDB database. My role involves setting up the server structure, managing CRUD operations for books and ratings, and implementing a secure authentication system."
+    },
+    {
+      "title": "Nina Carducci",
+      "image": "/images/projects/Ninacarduccci.webp",
+      "github": "https://github.com/SamSam-01/nina-carducci",
+      "website": "https://samsam-01.github.io/nina-carducci/",
+      "technologies": ["devicon-html5-plain", "devicon-css3-plain", "devicon-javascript-plain"],
+      "description": "As a freelance developer, I was hired by Nina Carducci, a photographer, to optimize her website (nina-carducci.github.io). The goal is to improve the site's performance, SEO and accessibility, as well as fix certain bugs in the existing code."
+    }
+  ]
+}
