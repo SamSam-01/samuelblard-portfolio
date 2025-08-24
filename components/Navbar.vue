@@ -77,9 +77,11 @@
         </a>
         
         <!-- Language Switcher avec le même style -->
+        <!--
         <div class="mt-4">
           <LanguageSwitcher />
         </div>
+        -->
       </div>
     </div>
   </nav>

@@ -1,0 +1,40 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "competences": "Compétences",
+    "projects": "Projets",
+    "experiences": "Expériences",
+    "contact": "Contact"
+  },
+  "description": {
+    "title": "Qui suis-je ?",
+    "subtitle": "Développeur Fullstack",
+    "content": "Je suis un développeur Fullstack spécialisé dans le développement VueJS, ReactJS et NodeJS. Passionné par la création d'applications web modernes et performantes."
+  },
+  "competences": {
+    "title": "Mes compétences",
+    "subtitle": "Technologies que j'utilise"
+  },
+  "projects": {
+    "title": "Mes projets",
+    "subtitle": "Découvrez mes réalisations",
+    "viewProject": "Voir le projet",
+    "loadMore": "Voir plus",
+    "viewCode": "Voir le code",
+    "visitSite": "Visiter le site"
+  },
+  "experiences": {
+    "title": "Mes expériences",
+    "subtitle": "Mon parcours professionnel",
+    "present": "Présent"
+  },
+  "formations": {
+    "title": "Mes formations",
+    "subtitle": "Mon parcours académique"
+  },
+  "footer": {
+    "copyright": "Tous droits réservés.",
+    "madeWith": "Réalisé avec Nuxt.js"
+  }
+}
