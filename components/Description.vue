@@ -16,9 +16,14 @@
 </template>
 
 <script setup>
-import aboutme from "~/content/aboutme.json";
+import aboutmeFr from "~/content/aboutme.json";
+import aboutmeEn from "~/content/aboutme.en.json";
 
-const about = aboutme;
+const { locale } = useI18n();
+
+const about = computed(() => {
+  return locale.value === 'fr' ? aboutmeFr : aboutmeEn;
+});
 </script>
 
 <style scoped>

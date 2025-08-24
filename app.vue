@@ -27,18 +27,25 @@ import { SpeedInsights } from "@vercel/speed-insights/nuxt";
 
 export default {
   setup() {
-    useHead({
+    const { locale } = useI18n();
+    
+    useHead(() => ({
       title: 'Samuel BLARD',
       htmlAttrs: {
-        lang: 'fr'
+        lang: locale.value
       },
       meta: [
-        { name: 'description', content: 'Samuel BLARD est un développeur Fullstack spécialiser dans le développement VueJS, ReactJS et NodeJS' }
+        { 
+          name: 'description', 
+          content: locale.value === 'fr' 
+            ? 'Samuel BLARD est un développeur Fullstack spécialisé dans le développement VueJS, ReactJS et NodeJS' 
+            : 'Samuel BLARD is a Fullstack developer specialized in VueJS, ReactJS and NodeJS development'
+        }
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/logo.png' }
       ]
-    })
+    }))
     const mainContainer = ref(null);
 
     const handleMouseMove = (event) => {

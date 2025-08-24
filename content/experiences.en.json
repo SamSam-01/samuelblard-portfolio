@@ -1,0 +1,36 @@
+{
+  "experiences": [
+    {
+      "entreprise": "ISAE-SUPAERO",
+      "title": "Junior Fullstack Engineer",
+      "logo": "/images/logos/ISAE-SUPAERO.webp",
+      "contract": "Fixed-term contract",
+      "date": "Since July 2024",
+      "description": "- Development of new features\n- Bug fixing (VueJS, PHP)\n- Server performance optimization (Django)\n- Sprint organization (SCRUM Master)"
+    },
+    {
+      "entreprise": "ISAE-SUPAERO",
+      "title": "Fullstack Developer",
+      "logo": "/images/logos/ISAE-SUPAERO.webp",
+      "contract": "Work-study program",
+      "date": "July 2023 - June 2024",
+      "description": "- Development of new features\n- Bug fixing (VueJS, PHP)\n- Server performance optimization (Django)\n- Sprint organization (SCRUM Master)"
+    },
+    {
+      "entreprise": "TECHSELL",
+      "title": "LG Sales Advisor",
+      "logo": "/images/logos/TECHSELL.webp",
+      "contract": "Fixed-term contract",
+      "date": "May 2023 - July 2023",
+      "description": "- Customer contact\n- Training on new LG technologies and competitors\n- Knowledge of LG products and competitors"
+    },
+    {
+      "entreprise": "ISAE-SUPAERO",
+      "title": "Fullstack Developer",
+      "logo": "/images/logos/ISAE-SUPAERO.webp",
+      "contract": "Internship",
+      "date": "July 2022 - December 2022",
+      "description": "- Develop a profile page for Students on the learning platform (VueJS)\n- Develop course recommendations (JS / ElasticSearch)\n- Develop a course statistics tracking page for authors (Drupal)\n- Deploy on pre-production server (Kubernetes/Docker/Jenkins)"
+    }
+  ]
+}

@@ -1,10 +1,15 @@
 <template>
   <UContainer>
-    <SectionTitle title="Mes Projets" />
+    <SectionTitle :title="$t('projects.title')" />
     <LoadMore :items="projects" :initialShow="3" :increment="3">
       <template #default="{ visibleItems }">
         <div v-for="project in visibleItems" :key="project.id" class="project-cards" data-aos="fade-up">
           <ProjectCard :project="project" />
+        </div>
+      </template>
+      <template #loadMore="{ loadMore }">
+        <div class="flex justify-center mt-8">
+          <UButton @click="loadMore">{{ $t('projects.loadMore') }}</UButton>
         </div>
       </template>
     </LoadMore>
@@ -16,9 +21,14 @@ import SectionTitle from '~/components/SectionTitle.vue';
 import ProjectCard from '~/components/ProjectCard.vue';
 import LoadMore from '~/components/LoadMore.vue';
 
-import project_list from '~/content/projects.json';
+import project_listFr from '~/content/projects.json';
+import project_listEn from '~/content/projects.en.json';
 
-const projects = project_list.projects;
+const { locale } = useI18n();
+
+const projects = computed(() => {
+  return locale.value === 'fr' ? project_listFr.projects : project_listEn.projects;
+});
 </script>
 
 <style scoped>

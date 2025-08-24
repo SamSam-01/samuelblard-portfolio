@@ -26,8 +26,8 @@
         </div>
         <template #footer>
           <div class="flex flex-wrap items-center justify-center space-x-2">
-            <a v-if="project.github != null" :href="project.github" target="_blank" class="bg-green-500 p-1 rounded-3xl"><i class="devicon-github-original p-1"></i>Voir le code</a>
-            <a v-if="project.website != null" :href="project.website" target="_blank" class="bg-green-500 p-1 rounded-full" >Visiter le site →</a>
+            <a v-if="project.github != null" :href="project.github" target="_blank" class="bg-green-500 p-1 rounded-3xl"><i class="devicon-github-original p-1"></i>{{ $t('projects.viewCode') }}</a>
+            <a v-if="project.website != null" :href="project.website" target="_blank" class="bg-green-500 p-1 rounded-full" >{{ $t('projects.visitSite') }} →</a>
           </div>
         </template>
       </UCard>

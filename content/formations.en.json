@@ -1,0 +1,28 @@
+{
+  "formations": [
+    {
+      "entreprise": "OpenClassrooms",
+      "title": "Web Developer",
+      "logo": null,
+      "contract": "Obtained",
+      "date": "July 2023 - June 2024",
+      "description": "Some projects completed:\n- Dynamic web page (JS)\n- Website optimization with Lighthouse\n- Real estate rental application (REACT)\n- Book rating site back-end (Node - Express)"
+    },
+    {
+      "entreprise": "EPITECH",
+      "title": "Expert in Information Technology",
+      "logo": "/images/logos/epitech.webp",
+      "contract": "1st year completed",
+      "date": "September 2021 - July 2023",
+      "description": "Some projects completed:\n- Defender game in C / CSFML\n- File compressor in C\n- Makefile generator in C\n- Project Week 2023"
+    },
+    {
+      "entreprise": "CNED",
+      "title": "General Baccalaureate - Mathematics, NSI, SI",
+      "logo": null,
+      "contract": "Obtained - Honors",
+      "date": "2021",
+      "description": "- Participation in 24 hours of innovation (3rd place)\n- Development of several projects (Extra-curricular)\n- Password generator (Python)\n- Home automation (Arduino)\n- Voice assistant (Raspberry Pi + Python)"
+    }
+  ]
+}
