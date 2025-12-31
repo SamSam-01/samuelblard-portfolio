@@ -13,10 +13,8 @@ const props = defineProps<{
 }>();
 
 const isFlipped = ref(false);
-const description = props.experience.description;
-
 const formattedDescription = computed(() => {
-  return description.replace(/\n/g, '<br>');
+  return props.experience.description.replace(/\n/g, '<br>');
 });
 
 function flipCard() {
