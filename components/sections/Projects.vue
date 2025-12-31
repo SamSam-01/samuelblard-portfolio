@@ -7,11 +7,6 @@
           <ProjectCard :project="project" />
         </div>
       </template>
-      <template #loadMore="{ loadMore }">
-        <div class="flex justify-center mt-8">
-          <UButton @click="loadMore">{{ $t('projects.loadMore') }}</UButton>
-        </div>
-      </template>
     </LoadMore>
   </UContainer>
 </template>

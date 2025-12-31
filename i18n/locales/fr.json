@@ -1,4 +1,7 @@
 {
+  "common": {
+    "loadMore": "Voir plus"
+  },
   "navbar": {
     "home": "Accueil",
     "about": "À propos",

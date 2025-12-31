@@ -6,7 +6,7 @@
     <div v-if="items.length > itemsToShow" class="flex justify-center mt-4">
       <slot name="loadMore" :loadMore="showMoreItems">
         <button @click="showMoreItems" class="text-xl font-bold text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
-          ↓ Voir plus
+          ↓ {{ $t('common.loadMore') }}
         </button>
       </slot>
     </div>
