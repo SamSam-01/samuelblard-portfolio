@@ -13,6 +13,13 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
   ],
 
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
+
   i18n: {
     locales: [
       { code: 'fr', iso: 'fr-FR', name: 'Français', file: 'fr.json' },
@@ -29,8 +36,7 @@ export default defineNuxtConfig({
       alwaysRedirect: true,
       fallbackLocale: 'en',
       cookieSecure: false,
-      cookieSameSite: 'lax',
-      cookieMaxAge: 365 * 24 * 60 * 60 // 1 an
+
     }
   },
 

@@ -1,3 +1,26 @@
+<script setup lang="ts">
+import { ref, computed } from 'vue';
+import type { Project } from '~/types';
+
+const props = defineProps<{
+  project: Project;
+}>();
+
+const showProjectModal = ref(false);
+
+const openProjectModal = () => {
+  showProjectModal.value = true;
+};
+
+const truncatedDescription = computed(() => {
+  const maxLength = 100;
+  if (props.project.description.length > maxLength) {
+    return props.project.description.substring(0, maxLength) + '...';
+  }
+  return props.project.description;
+});
+</script>
+
 <template>
   <div class="w-[300px] mr-8 text-center transition-all duration-200 ease-in-out hover:scale-110 max-[480px]:hover:scale-100 mx-auto">
     <div @click="openProjectModal" class="cursor-pointer">
@@ -34,32 +57,3 @@
     </UModal>
   </div>
 </template>
-
-<script setup lang="ts">
-import { ref, computed } from 'vue';
-
-const props = defineProps<{
-  project: {
-    title: string;
-    image: string;
-    github: string;
-    website: string;
-    technologies: string[];
-    description: string;
-  };
-}>();
-
-const showProjectModal = ref(false);
-
-const openProjectModal = () => {
-  showProjectModal.value = true;
-};
-
-const truncatedDescription = computed(() => {
-  const maxLength = 100;
-  if (props.project.description.length > maxLength) {
-    return props.project.description.substring(0, maxLength) + '...';
-  }
-  return props.project.description;
-});
-</script>
