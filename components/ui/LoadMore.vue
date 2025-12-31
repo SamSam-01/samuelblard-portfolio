@@ -4,29 +4,25 @@
       <slot :visibleItems="displayedItems"></slot>
     </div>
     <div v-if="items.length > itemsToShow" class="flex justify-center mt-4">
-      <button @click="showMoreItems" class="text-xl font-bold text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
-        ↓ Voir plus
-      </button>
+      <slot name="loadMore" :loadMore="showMoreItems">
+        <button @click="showMoreItems" class="text-xl font-bold text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
+          ↓ Voir plus
+        </button>
+      </slot>
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts" generic="T">
 import { ref, computed } from 'vue';
 
-const props = defineProps({
-  items: {
-    type: Array,
-    required: true
-  },
-  initialShow: {
-    type: Number,
-    default: 3
-  },
-  increment: {
-    type: Number,
-    default: 3
-  }
+const props = withDefaults(defineProps<{
+  items: T[];
+  initialShow?: number;
+  increment?: number;
+}>(), {
+  initialShow: 3,
+  increment: 3
 });
 
 const itemsToShow = ref(props.initialShow);

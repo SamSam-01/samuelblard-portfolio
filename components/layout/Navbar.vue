@@ -72,7 +72,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import NavButton from './NavButton.vue'
+
 
 const menuOpen = ref(false)
 

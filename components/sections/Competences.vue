@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import SectionTitle from '~/components/SectionTitle.vue';
-import CompetencesIcons from './CompetencesIcons.vue';
 import competences from '~/content/competences.json';
 
 const competencesList = competences.competences;

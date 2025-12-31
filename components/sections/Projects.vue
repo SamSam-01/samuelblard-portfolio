@@ -17,18 +17,12 @@
 </template>
 
 <script setup lang="ts">
-import SectionTitle from '~/components/SectionTitle.vue';
-import ProjectCard from '~/components/ProjectCard.vue';
-import LoadMore from '~/components/LoadMore.vue';
+import SectionTitle from '~/components/ui/SectionTitle.vue';
+import ProjectCard from '~/components/cards/ProjectCard.vue';
+import LoadMore from '~/components/ui/LoadMore.vue';
+import { usePortfolioData } from '~/composables/usePortfolioData';
 
-import project_listFr from '~/content/projects.json';
-import project_listEn from '~/content/projects.en.json';
-
-const { locale } = useI18n();
-
-const projects = computed(() => {
-  return locale.value === 'fr' ? project_listFr.projects : project_listEn.projects;
-});
+const { projects } = usePortfolioData();
 </script>
 
 <style scoped>
