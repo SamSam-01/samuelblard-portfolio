@@ -1,93 +1,47 @@
 <template>
-  <div @mousemove="handleMouseMove" class="main-container">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <div ref="mainContainer" class="main-container">
+    <Link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <SpeedInsights />
-    <Navbar></Navbar>
+    <Navbar />
     <div>
-      <Description id="whoami"></Description>
-      <Competences id="competences"></Competences>
-      <Projects id="projects"></Projects>
-      <Experiences id="experiences"></Experiences>
+      <Description id="whoami" />
+      <Competences id="competences" />
+      <Projects id="projects" />
+      <Experiences id="experiences" />
     </div>
-    <Footer></Footer>
+    <Footer />
   </div>
 </template>
 
+<script setup lang="ts">
+import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 
-<script>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
-import Description from './components/Description.vue';
-import Navbar from '~/components/Navbar.vue';
-import Competences from '~/components/Competences.vue';
-import Experiences from '~/components/Experiences.vue';
-import Footer from '~/components/Footer.vue';
-import Projects from '~/components/Projects.vue';
-import { SpeedInsights } from "@vercel/speed-insights/nuxt";
+const { locale } = useI18n()
 
-
-export default {
-  setup() {
-    const { locale } = useI18n();
-    
-    useHead(() => ({
-      title: 'Samuel BLARD',
-      htmlAttrs: {
-        lang: locale.value
-      },
-      meta: [
-        { 
-          name: 'description', 
-          content: locale.value === 'fr' 
-            ? 'Samuel BLARD est un développeur Fullstack spécialisé dans le développement VueJS, ReactJS et NodeJS' 
-            : 'Samuel BLARD is a Fullstack developer specialized in VueJS, ReactJS and NodeJS development'
-        }
-      ],
-      link: [
-        { rel: 'icon', type: 'image/png', href: '/logo.png' }
-      ]
-    }))
-    const mainContainer = ref(null);
-
-    const handleMouseMove = (event) => {
-      // Vérification si l'appareil est mobile (largeur <= 768px)
-      if (window.matchMedia('(max-width: 768px)').matches) {
-        return; // Ne rien faire si c'est un appareil mobile
-      }
-
-      const { clientX, clientY } = event;
-      const { innerWidth, scrollY } = window;
-
-      const xPercent = (clientX / innerWidth) * 100;
-      const yPercent = ((clientY + scrollY) / document.documentElement.scrollHeight) * 100;
-
-      if (mainContainer.value) {
-        mainContainer.value.style.setProperty('--mouse-x', `${xPercent}%`);
-        mainContainer.value.style.setProperty('--mouse-y', `${yPercent}%`);
-      }
-    };
-
-    onMounted(() => {
-      mainContainer.value = document.querySelector('.main-container');
-    });
-
-    onBeforeUnmount(() => {
-      mainContainer.value = null;
-    });
-
-    return {
-      handleMouseMove,
-    };
+useHead({
+  title: 'Samuel BLARD',
+  htmlAttrs: {
+    lang: locale
   },
-  components: {
-    Description,
-    Navbar,
-    Competences,
-    Experiences,
-    SpeedInsights
-  },
-};
+  link: [
+    { rel: 'icon', type: 'image/png', href: '/logo.png' }
+  ]
+})
+
+useSeoMeta({
+  description: () => locale.value === 'fr' 
+    ? 'Samuel BLARD est un développeur Fullstack spécialisé dans le développement VueJS, ReactJS et NodeJS' 
+    : 'Samuel BLARD is a Fullstack developer specialized in VueJS, ReactJS and NodeJS development',
+})
+
+// Mouse Gradient Logic
+const { mainContainer } = useMouseGradient()
+// Note: handleMouseMove is automatically attached via the composable's onMounted/event listener
+// We can remove the @mousemove from the template as usage of window event listener in composable is cleaner for global effects
+// UPDATE: The original code used @mousemove on the div. The composable I wrote uses window listener.
+// However, the transparency/gradient effect seems to rely on the container.
+// Let's stick to the composable's window listener which is generally better for this "spotlight" effect.
 </script>
-
 
 <style scoped>
 .main-container {
