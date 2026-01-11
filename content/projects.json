@@ -1,27 +1,24 @@
 {
   "projects": [
     {
-      "title": "Cesium poc",
-      "image": "/images/projects/Cesium.png",
-      "github": "https://github.com/SamSam-01/Cesium-poc",
-      "website": "https://world.samuelblard.com/",
-      "technologies": ["devicon-react-original"],
-      "description": "Test de CesiumJs"
-    },
-    {
-      "title": "Junqo Landing Page",
-      "image": "/images/projects/Junqo.png",
-      "github": null,
-      "website": "https://jlp-dev.vercel.app/",
-      "technologies": ["devicon-html5-plain", "devicon-css3-plain"],
-      "description": "Landing page pour Junqo"
+      "title": "Moty",
+      "image": "/images/projects/Moty.png",
+      "github": "https://github.com/SamSam-01/Moty",
+      "website": "https://moty.samuelblard.com/",
+      "technologies": [
+        "devicon-reactnative-original-wordmark"
+      ],
+      "description": "Moty est une application mobile et web permettant de classer les films que vous avez vus par année. Elle offre une expérience fluide et intuitive pour organiser vos films, attribuer des notes et comparer vos classements avec ceux d'autres utilisateurs."
     },
     {
       "title": "Booki",
       "image": "/images/projects/Booki.webp",
       "github": "https://github.com/SamSam-01/Booki",
       "website": "https://samsam-01.github.io/Booki/",
-      "technologies": ["devicon-html5-plain", "devicon-css3-plain"],
+      "technologies": [
+        "devicon-html5-plain",
+        "devicon-css3-plain"
+      ],
       "description": "L'entreprise souhaite créer un site Internet permettant aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix. Mon rôle dans ce projet est d'intégrer l'interface utilisateur du site en utilisant HTML et CSS."
     },
     {
@@ -29,7 +26,10 @@
       "image": "/images/projects/SophieBluel.webp",
       "github": "https://github.com/SamSam-01/Portfolio-architect-sophie-bluel",
       "website": null,
-      "technologies": ["devicon-html5-plain", "devicon-javascript-plain"],
+      "technologies": [
+        "devicon-html5-plain",
+        "devicon-javascript-plain"
+      ],
       "description": "En tant que développeur front-end chez ArchiWebos, j'ai été intégré en renfort dans une équipe travaillant sur la conception du site portfolio d'une architecte d'intérieur. Mon rôle consiste à développer des fonctionnalités clés du site pour améliorer l'expérience utilisateur et permettre une gestion efficace des contenus."
     },
     {
@@ -37,7 +37,10 @@
       "image": "/images/projects/Kasa.webp",
       "github": "https://github.com/SamSam-01/kasa",
       "website": "https://samsam-01.github.io/kasa/",
-      "technologies": ["devicon-react-original", "devicon-typescript-plain"],
+      "technologies": [
+        "devicon-react-original",
+        "devicon-typescript-plain"
+      ],
       "description": "En tant que développeur front-end freelance pour Kasa, un leader de la location d'appartements entre particuliers en France, ma mission est de participer à la refonte complète du site. Cette refonte implique le passage d'ASP.NET à une stack JavaScript moderne, avec NodeJS pour le back-end et React pour le front-end. Le projet inclut la mise en place d'une interface utilisateur responsive basée sur des maquettes Figma.\n\n"
     },
     {
@@ -45,7 +48,10 @@
       "image": "/images/projects/Monvieuxgrimoire.webp",
       "github": "https://github.com/SamSam-01/mon-vieux-grimoire-backend",
       "website": null,
-      "technologies": ["devicon-nodejs-plain-wordmark", "devicon-express-original"],
+      "technologies": [
+        "devicon-nodejs-plain-wordmark",
+        "devicon-express-original"
+      ],
       "description": "Le projet consiste à développer le back-end d'un site web permettant aux utilisateurs de noter des livres. Le back-end sera créé en utilisant Express.js et connecté à une base de données MongoDB. Mon rôle implique la mise en place de la structure du serveur, la gestion des opérations CRUD pour les livres et les notations, et l'implémentation d'un système d'authentification sécurisé."
     },
     {
@@ -53,7 +59,11 @@
       "image": "/images/projects/Ninacarduccci.webp",
       "github": "https://github.com/SamSam-01/nina-carducci",
       "website": "https://samsam-01.github.io/nina-carducci/",
-      "technologies": ["devicon-html5-plain", "devicon-css3-plain", "devicon-javascript-plain"],
+      "technologies": [
+        "devicon-html5-plain",
+        "devicon-css3-plain",
+        "devicon-javascript-plain"
+      ],
       "description": "En tant que développeur freelance, j'ai été engagé par Nina Carducci, une photographe, pour optimiser son site web (nina-carducci.github.io). L'objectif est d'améliorer les performances du site, son référencement (SEO) et son accessibilité, ainsi que de corriger certains bugs dans le code existant."
     }
   ]
