@@ -6,7 +6,7 @@
       "logo": "/images/logos/ISAE-SUPAERO.webp",
       "contract": "CDD",
       "date": "Depuis Juillet 2024",
-      "description": "- Développement de nouvelles fonctionnalités\n- Résoudre des bugs (VueJS, PHP)\n- Optimiser les performances serveur (Django)\n- Organisation de sprints (SCRUM Master)"
+      "description": "- Modernisation Frontend : Pilote de la migration de l'interface (Vue.js 2 vers 3). \n - Infrastructure & Cloud (OVH) : Migration des serveurs de production vers une infrastructure OVH, réduisant les coûts et améliorant la maîtrise technique interne. \n - Performance & Python : Conception de campagnes de tests de charge en Python (avec Locust) pour simuler des pics d'activité. Analyse des résultats et optimisation du code backend Django pour garantir la stabilité. \n - Observabilité : Déploiement proactif d'une stack de monitoring complète (Grafana, Loki, Alloy) pour sécuriser la nouvelle infrastructure et détecter les incidents en temps réel. \n - CI/CD & Qualité : Mise en place de pipelines GitLab CI pour l'automatisation des tests et le déploiement de previews de fonctionnalités (Review Apps), sécurisant et accélérant les livraisons. \n - Agilité : Rôle de Scrum Master tournant, fluidifiant les rituels de l'équipe et garantissant l'amélioration continue des processus."
     },
     {
       "entreprise": "ISAE-SUPAERO",
@@ -14,7 +14,7 @@
       "logo": "/images/logos/ISAE-SUPAERO.webp",
       "contract": "Alternance",
       "date": "Juillet 2023 - Juin 2024",
-      "description": "- Développement de nouvelles fonctionnalités\n- Résoudre des bugs (VueJS, PHP)\n- Optimiser les performances serveur (Django)\n- Organisation de sprints (SCRUM Master)"
+      "description": "- Développement Data & Algo : Conception d'un module analytique pour le traitement de données temps réel et recommandations pour les utilisateurs. \n - Visualisation : Création de tableaux de bord interactifs pour rendre les données techniques intelligibles et actionnables par les utilisateurs finaux. \n - DevOps & Industrialisation : Participation à la mise en production robuste via l'orchestration Kubernetes et l'automatisation des pipelines CI/CD."
     },
     {
       "entreprise": "TECHSELL",
@@ -22,7 +22,7 @@
       "logo": "/images/logos/TECHSELL.webp",
       "contract": "CDD",
       "date": "Mai 2023 - Juillet 2023",
-      "description": "- Aller au contact des clients\n- Se former aux nouvelles technologies de LG et ses concurrents\n- Connaître les produits LG et concurrents"
+      "description": "- Relation Client & Diagnostic : Aller au contact pour analyser précisément le besoin client et proposer la solution technique adaptée. \n - Veille Technologique : Formation continue sur les dernières innovations LG et analyse concurrentielle (benchmarking) pour maintenir un discours d'expert. \n - Pédagogie : Capacité à vulgariser des concepts technologiques complexes pour les rendre accessibles."
     },
     {
       "entreprise": "ISAE-SUPAERO",
