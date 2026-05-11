@@ -1,6 +1,14 @@
 {
   "experiences": [
     {
+      "entreprise": "TOLOXA",
+      "title": "Développeur Fullstack",
+      "logo": "https://toloxa.com/assets/Logo_Toloxa_white-BFMBZBWh.webp",
+      "contract": "CDI",
+      "date": "Depuis Avril 2026",
+      "description": ""
+    },
+    {
       "entreprise": "ISAE-SUPAERO",
       "title": "Junior Fullstack Engineer",
       "logo": "/images/logos/ISAE-SUPAERO.webp",
