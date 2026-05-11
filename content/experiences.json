@@ -1,11 +1,19 @@
 {
   "experiences": [
     {
+      "entreprise": "TOLOXA",
+      "title": "Développeur Fullstack",
+      "logo": "https://toloxa.com/assets/Logo_Toloxa_white-BFMBZBWh.webp",
+      "contract": "CDI",
+      "date": "Depuis Avril 2026",
+      "description": ""
+    },
+    {
       "entreprise": "ISAE-SUPAERO",
       "title": "Ingénieur Fullstack Junior",
       "logo": "/images/logos/ISAE-SUPAERO.webp",
       "contract": "CDD",
-      "date": "Depuis Juillet 2024",
+      "date": "Juillet 2024 - Avril 2026",
       "description": "- Modernisation Frontend : Pilote de la migration de l'interface (Vue.js 2 vers 3). \n - Infrastructure & Cloud (OVH) : Migration des serveurs de production vers une infrastructure OVH, réduisant les coûts et améliorant la maîtrise technique interne. \n - Performance & Python : Conception de campagnes de tests de charge en Python (avec Locust) pour simuler des pics d'activité. Analyse des résultats et optimisation du code backend Django pour garantir la stabilité. \n - Observabilité : Déploiement proactif d'une stack de monitoring complète (Grafana, Loki, Alloy) pour sécuriser la nouvelle infrastructure et détecter les incidents en temps réel. \n - CI/CD & Qualité : Mise en place de pipelines GitLab CI pour l'automatisation des tests et le déploiement de previews de fonctionnalités (Review Apps), sécurisant et accélérant les livraisons. \n - Agilité : Rôle de Scrum Master tournant, fluidifiant les rituels de l'équipe et garantissant l'amélioration continue des processus."
     },
     {
